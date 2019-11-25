@@ -1,4 +1,8 @@
-
+/* header .navbar-default .navbar-nav li a {
+  color: #e7d4d4 !important;
+  font-weight: 900 !important;
+  font-size: 20px !important;
+} */
 @media print {
   *,
   *:before,
@@ -50,6 +54,7 @@
   .navbar {
     display: none;
   }
+  
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;

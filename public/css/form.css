@@ -1,0 +1,25 @@
+.form{
+    min-height: 945px;
+    background: url("../images/uploads/slider-bg.jpg");
+}
+.form > h1{
+    padding-top: 4%;
+    padding-left: 35%;
+    color: black;
+    font-size: 48px;
+    font-family: fantasy;
+}
+.logreg{
+    position: absolute;
+    left: 35%;
+    top: 33%;
+    padding: 5%;
+    border: 1px solid black;
+    box-shadow: 9px 18px 3px 0px black;
+    border-radius: 10px;
+}
+.logout{
+    position: absolute;
+    top: 51%;
+    left: 70%;
+}

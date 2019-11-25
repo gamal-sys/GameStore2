@@ -20,78 +20,6 @@
 
 </head>
 <body>
-<div class="login-wrapper" id="login-content">
-    <div class="login-content">
-        <a href="#" class="close">x</a>
-        <h3>Login</h3>
-        <form method="post" action="login.php">
-        	<div class="row">
-        		 <label for="username">
-                    Username:
-                    <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-                </label>
-        	</div>
-           
-            <div class="row">
-            	<label for="password">
-                    Password:
-                    <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-            <div class="row">
-            	<div class="remember">
-					<div>
-						<input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
-					</div>
-            		<a href="#">Forget password ?</a>
-            	</div>
-            </div>
-           <div class="row">
-           	 <button type="submit">Login</button>
-           </div>
-        </form>
-        
-        </div>
-    </div>
-</div>
-
-<div class="login-wrapper"  id="signup-content">
-    <div class="login-content">
-        <a href="#" class="close">x</a>
-        <h3>sign up</h3>
-        <form method="post" action="signup.php">
-            <div class="row">
-                 <label for="username-2">
-                    Username:
-                    <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-                </label>
-            </div>
-           
-            <div class="row">
-                <label for="email-2">
-                    your email:
-                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-             <div class="row">
-                <label for="password-2">
-                    Password:
-                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-             <div class="row">
-                <label for="repassword-2">
-                    re-type Password:
-                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-           <div class="row">
-             <button type="submit">sign up</button>
-           </div>
-        </form>
-    </div>
-</div>
-
 <header class="ht-header">
 	<div class="container">
 		<nav class="navbar navbar-default navbar-custom">
@@ -105,7 +33,7 @@
 							<span></span>
 						</div>
 				    </div>
-				    <a href="index.html"><img class="logo" src="images/logo1.png" alt="" width="119" height="58"></a>
+				    <a href="/"><img class="logo" src="images/logo1.png" alt="" width="119" height="58"></a>
 			    </div>
 				
 				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
@@ -114,13 +42,13 @@
 							<a href="#page-top"></a>
 						</li>
 						<li >
-							<a class="btn btn-default">
+							<a class="btn btn-default" href="/">
 							Home 
 							</a>
 						
 						</li>
 						<li >
-							<a class="btn btn-default " >
+							<a class="btn btn-default " href="/game">
 							Games<i></i>
 							</a>
 								</li>			
@@ -128,163 +56,27 @@
 							</ul>
 						</li>
 						
-					<ul class="nav navbar-nav flex-child-menu menu-right">
-						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							pages <i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu level1">
-								<li class="it-last"><a href="comingsoon.html">Coming soon</a></li>
-							</ul>
-						</li>                
-						<li><a href="#">Help</a></li>
-						<li class="loginLink"><a href="#">LOG In</a></li>
-						<li class="btn signupLink"><a href="#">sign up</a></li>
-					</ul>
+					
 				</div>
 			
 	    </nav>
 	    
 
-	    <div class="top-search">
-	    	<select>
-				<option value="united">Games</option>
-				<option value="saab">Others</option>
-			</select>
-			<input type="text" placeholder="Search for a games.">
-	    </div>
+	   
 	</div>
 </header>
 
-
-<div class="slider movie-items">
-	<div class="container">
-		<div class="row">
-			
-	    	<div  class="slick-multiItemSlider">
-	    		<div class="movie-item">
-	    			<div class="mv-img">
-	    				<a href="#"><img src="images/uploads/slider1.jpg" alt="" width="285" height="437"></a>
-	    			</div>
-	    			<div class="title-in">
-	    				<div class="cate">
-	    					<span class="blue"><a href="#">Sci-fi</a></span>
-	    				</div>
-	    				<h6><a href="#">Star Wars</a></h6>
-	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
-	    			</div>
-	    		</div>
-				<div class="movie-item">
-	    			<div class="mv-img">
-	    				<a href="#"><img src="images/uploads/slider2.jpg" alt="" width="285" height="437"></a>
-	    			</div>
-	    			<div class="title-in">
-	    				<div class="cate">
-	    					<span class="yell"><a href="#">action</a></span>
-	    				</div>
-	    				<h6><a href="#">Call Of Duty: Modern Warfare</a></h6>
-	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
-	    			</div>
-	    		</div>
-	    		<div class="movie-item">
-	    			<div class="mv-img">
-	    				<a href="#"><img src="images/uploads/slider3.jpg" alt="" width="285" height="437"></a>
-	    			</div>
-	    			<div class="title-in">
-	    				<div class="cate">
-	    					<span class="green"><a href="#">action</a></span>
-	    				</div>
-	    				<h6><a href="#">Tomb Raider</a></h6>
-	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
-	    			</div>
-	    		</div>
-	    		<div class="movie-item">
-	    			<div class="mv-img">
-	    				<a href="#"><img src="images/uploads/slider4.jpg" alt="" width="285" height="437"></a>
-	    			</div>
-	    			<div class="title-in">
-	    				<div class="cate">
-	    					<span class="blue"><a href="#">Sci-fi</a></span> <span class="orange"><a href="#">advanture</a></span>
-	    				</div>
-	    				<h6><a href="#">Watch Dogs 2</a></h6>
-	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
-	    			</div>
-	    		</div>
-	    		<div class="movie-item">
-	    			<div class="mv-img">
-	    				<a href="#"><img src="images/uploads/slider5.jpg" alt="" width="285" height="437"></a>
-	    			</div>
-	    			<div class="title-in">
-	    				<div class="cate">
-	    					<span class="blue"><a href="#">Shooter</a></span>
-	    				</div>
-	    				<h6><a href="#">Bioshock:Infinite</a></h6>
-	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
-	    			</div>
-	    		</div>
-				<div class="movie-item">
-	    			<div class="mv-img">
-	    				<a href="#"><img src="images/uploads/slider6.jpg" alt="" width="285" height="437"></a>
-	    			</div>
-	    			<div class="title-in">
-	    				<div class="cate">
-	    					<span class="yell"><a href="#">adventure</a></span>
-	    				</div>
-	    				<h6><a href="#">Below</a></h6>
-	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
-	    			</div>
-	    		</div>
-	    		<div class="movie-item">
-	    			<div class="mv-img">
-	    				<img src="images/uploads/slider7.jpg" alt="" width="285" height="437">
-	    			</div>
-	    			<div class="title-in">
-	    				<div class="cate">
-	    					<span class="green"><a href="#">Horror</a></span>
-	    				</div>
-	    				<h6><a href="#">Resident Evil 2</a></h6>
-	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
-	    			</div>
-	    		</div>
-	    		<div class="movie-item">
-	    			<div class="mv-img">
-	    				<img src="images/uploads/slider8.jpg" alt="" width="285" height="437">
-	    			</div>
-	    			<div class="title-in">
-	    				<div class="cate">
-	    					<span class="blue"><a href="#">Shooter</a></span> <span class="orange"><a href="#">advanture</a></span>
-	    				</div>
-	    				<h6><a href="#">Max Payne 3</a></h6>
-	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
-	    			</div>
-	    		</div>
-	    		<div class="movie-item">
-	    			<div class="mv-img">
-	    				<img src="images/uploads/slider9.jpg" alt="" width="285" height="437">
-	    			</div>
-	    			<div class="title-in">
-	    				<div class="cate">
-	    					<span class="green"><a href="#">Shooter</a></span>
-	    				</div>
-	    				<h6><a href="#">Metro 2033</a></h6>
-	    				<p><i class="ion-android-star"></i><span>10</span> /10</p>
-	    			</div>
-	    		</div>
-	    	</div>
-	    </div>
-	</div>
-</div>
 <div class="movie-items">
 	<div class="container">
 		<div class="row ipad-width">
 			<div class="col-md-8">
 				<div class="title-hd">
-					<h2>Discount NOW!!!</h2>
+					<h2></h2>
 					
 				</div>
 				<div class="tabs">
 					<ul class="tab-links">
-						<li class="active"><a href="#tab1">#Popular</a></li>                      
+						<li class="active"><a href="#tab1"></a></li>                      
 					</ul>
 				    <div class="tab-content">
 				        <div id="tab1" class="tab active">
@@ -296,7 +88,7 @@
 					            				<img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
 					            			</div> 
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">MineCraft</a></h6>
@@ -310,7 +102,7 @@
 					            				<img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Observer</a></h6>
@@ -324,7 +116,7 @@
 					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Fifa-17</a></h6>
@@ -338,7 +130,7 @@
 					            				<img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Fallout 4</a></h6>
@@ -352,7 +144,7 @@
 					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Alan Wake</a></h6>
@@ -366,7 +158,7 @@
 					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Battlefield 3</a></h6>
@@ -380,7 +172,7 @@
 					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Mortal Kombat 1</a></h6>
@@ -394,7 +186,7 @@
 					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">EVE Online</a></h6>
@@ -408,7 +200,7 @@
 					            				<img src="images/uploads/mv-item9.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Watch Dogs</a></h6>
@@ -428,7 +220,7 @@
 					            				<img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Minecraft</a></h6>
@@ -442,7 +234,7 @@
 					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">The revenant</a></h6>
@@ -456,7 +248,7 @@
 					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Die hard</a></h6>
@@ -470,7 +262,7 @@
 					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">The walk</a></h6>
@@ -484,7 +276,7 @@
 					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Die hard</a></h6>
@@ -504,7 +296,7 @@
 					            				<img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Interstellar</a></h6>
@@ -518,7 +310,7 @@
 					            				<img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">The revenant</a></h6>
@@ -532,7 +324,7 @@
 					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Die hard</a></h6>
@@ -546,7 +338,7 @@
 					            				<img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">The walk</a></h6>
@@ -560,7 +352,7 @@
 					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Die hard</a></h6>
@@ -580,7 +372,7 @@
 					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Interstellar</a></h6>
@@ -594,7 +386,7 @@
 					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">The revenant</a></h6>
@@ -608,7 +400,7 @@
 					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Die hard</a></h6>
@@ -622,7 +414,7 @@
 					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">The walk</a></h6>
@@ -636,7 +428,7 @@
 					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Die hard</a></h6>
@@ -669,7 +461,7 @@
 					            				<img src="images/uploads/Godzilla.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Godzilla 2</a></h6>
@@ -683,7 +475,7 @@
 					            				<img src="images/uploads/2.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">BloodBorn</a></h6>
@@ -697,7 +489,7 @@
 					            				<img src="images/uploads/3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">WWE 2017</a></h6>
@@ -711,7 +503,7 @@
 					            				<img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Fallout 4</a></h6>
@@ -725,7 +517,7 @@
 					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">FIFA 17</a></h6>
@@ -745,7 +537,7 @@
 					            				<img src="images/uploads/4.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html">Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#">Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Doom</a></h6>
@@ -759,7 +551,7 @@
 					            				<img src="images/uploads/5.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Add <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Add <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Fortnitet</a></h6>
@@ -773,7 +565,7 @@
 					            				<img src="images/uploads/6.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">KILLZONE</a></h6>
@@ -787,7 +579,7 @@
 					            				<img src="images/uploads/7.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">KNACK</a></h6>
@@ -801,7 +593,7 @@
 					            				<img src="images/uploads/8.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Detroit Human Revolution</a></h6>
@@ -815,7 +607,7 @@
 					            				<img src="images/uploads/9.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Chasm</a></h6>
@@ -829,7 +621,7 @@
 					            				<img src="images/uploads/10.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Need For Speed:Rivals</a></h6>
@@ -843,7 +635,7 @@
 					            				<img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Fallout 3</a></h6>
@@ -857,7 +649,7 @@
 					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Alan Wake</a></h6>
@@ -871,7 +663,7 @@
 					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Batlfield 3</a></h6>
@@ -891,7 +683,7 @@
 					            				<img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Minecraft</a></h6>
@@ -905,7 +697,7 @@
 					            				<img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Observer</a></h6>
@@ -919,7 +711,7 @@
 					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Fifa 17</a></h6>
@@ -933,7 +725,7 @@
 					            				<img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html">Buy<i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#">Buy<i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Fallout 3:New Vegas</a></h6>
@@ -947,7 +739,7 @@
 					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Alan Wake</a></h6>
@@ -961,7 +753,7 @@
 					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html">Buy<i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#">Buy<i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Batlfield 3</a></h6>
@@ -975,7 +767,7 @@
 					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Mortal Kombat 1</a></h6>
@@ -989,7 +781,7 @@
 					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html">Buy<i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#">Buy<i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">EVE</a></h6>
@@ -1003,7 +795,7 @@
 					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Fifa 17</a></h6>
@@ -1023,7 +815,7 @@
 					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Alan Wake</a></h6>
@@ -1037,7 +829,7 @@
 					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html">Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#">Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Batlfield 3</a></h6>
@@ -1051,7 +843,7 @@
 					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Mortal Combat</a></h6>
@@ -1065,7 +857,7 @@
 					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">EVE Online</a></h6>
@@ -1079,7 +871,7 @@
 					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
 					            			</div>
 					            			<div class="hvr-inner">
-					            				<a  href="moviesingle.html"> Buy <i class="ion-android-arrow-dropright"></i> </a>
+					            				<a  href="#"> Buy <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="#">Fifa 17</a></h6>
