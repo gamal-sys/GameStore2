@@ -8,37 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/css/form.css">
-    <title>Registration</title>
+    <title>Register</title>
 </head>
 
-<body>
+<body >
     
     <div class="form">
         <h1 style="font-size: 80px;">Gaming Is Life</h1>
         <h1>Register Here</h1>
-        <form action="/register" class="logreg" method="post">
-            <div class="row">
-                <div class="col-lg-12">
-                    <input type="text" name="name" id="name" class="form-control" placeholder="User Name" required>
-                </div>
-            </div>    
-            <div class="row">
-                <div class="col-lg-12">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-                </div>
+        <form action="/users/register" method="post" style="padding: 7% 40%;">
+            <%-include("./partials/messages")-%>
+            <h1 style="color:black;">Register Here</h1>
+            <div class="form-row">
+                <input type="name" id="name" name="name" class="form-control" placeholder="Enter Name"
+                    value="<%= typeof name != 'undefined' ? name : '' %>" />
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-                </div>
+            <div class="form-row">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email"
+                    value="<%= typeof email != 'undefined' ? email : '' %>" />
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <button type="submit" class="btn btn-lg btn-secondary">Register</button>
-                    <a href="/login" class="btn btn-lg btn-secondary">Login If registered</a>
-                    <a href="/" class="btn btn-lg btn-secondary">Go Home</a>
-                </div>
+            <div class="form-row">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Create Password"
+                    value="<%= typeof password != 'undefined' ? password : '' %>" />
             </div>
+            <div class="form-row">
+                <input type="password" id="password2" name="password2" class="form-control"
+                    placeholder="Create Password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+            </div>
+            <div class="form-row">
+                <button type="submit" class="btn btn-primary"> Register </button>
+                <a href="/users/login" class="btn btn-primary"> Login </a>
+            </div>
+
         </form>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>

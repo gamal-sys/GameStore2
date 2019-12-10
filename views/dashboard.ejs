@@ -14,10 +14,12 @@
 <body>
 
     <div class="form">
-        <form action="/logout?_method=DELETE" method="post" class="logout">
-            <button type="submit" class="btn btn-primary" style="float: right;"> Log out </button>
-        </form>
-        <% users.forEach(function(user){ %>
+       <a href="/users/logout" class="btn btn-primary" style="float: left;margin:2px">Logout</a>
+       <a href="/setting" class="btn btn-secondary" style="float: left;margin:2px">Settings</a>
+       <form action="/delete" method="post">
+           <input type="text" class="form-control" name="id" value="<%= user._id %>" hidden>
+           <button type="submit" class="btn btn-danger" style="float: left;margin:2px"> Delete Account </button>
+       </form>
         <div style="padding: 7% 24%;font-size: 48px;
     font-family: fantasy;">
             <h1 >Hi <%= user.name %></h1>
@@ -25,7 +27,6 @@
             <h1 >Game is life.</h1>
 
         </div>
-        <% }) %>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
